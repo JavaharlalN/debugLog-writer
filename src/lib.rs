@@ -27,7 +27,7 @@ pub fn listen_flag_file() {
                     Ok(u) => u,
                     Err(_) => 0,
                 };
-                if counter_str == "" { COUNTER = 9; }
+                if counter_str == "" { COUNTER = 10; }
                 fs::remove_file(flag_path()).ok();
                 println!("Counter: {}", COUNTER);
             }
